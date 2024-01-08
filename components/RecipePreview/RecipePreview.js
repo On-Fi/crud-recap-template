@@ -8,10 +8,8 @@ export default function RecipePreview({ recipes }) {
             <Card
               key={recipe.title}
               imgSource={recipe.image}
-              title={recipe.title}
-              author={recipe.author.name}
-              description={recipe.description}
-              neededItems={recipe.neededItems}
+              description={recipe.ingredients}
+              neededItems={recipe.instructions}
               id={recipe._id}
             />
           ))}
