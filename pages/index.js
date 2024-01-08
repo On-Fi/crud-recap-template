@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RecipePreview from "@/components/RecipePreview/RecipePreview";
 
 export default function HomePage({ recipes }) {
   return (
@@ -9,7 +10,7 @@ export default function HomePage({ recipes }) {
       </p>
       <section>
         <h2>All Recipes</h2>
-        <RecipePreview recipes={recipes} />
+        <RecipePreview recipes={recipes.title} />
         <p>This is a list of the current recipes.</p>
       </section>
     </>
