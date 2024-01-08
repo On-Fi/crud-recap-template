@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 const { Schema, model, models } = mongoose;
 
-const recipeSchema = new Schema(
+const schema = new Schema(
   {
     title: { type: String, uppercase: true, required: true },
     ingredients: { type: Array, required: true },
