@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Homepage() {
+export default function HomePage({ recipes }) {
   return (
     <>
       <h1>Recipes</h1>
