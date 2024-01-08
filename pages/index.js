@@ -10,7 +10,7 @@ export default function HomePage({ recipes }) {
       </p>
       <section>
         <h2>All Recipes</h2>
-        <RecipePreview recipes={recipes} />
+        {/* <RecipePreview recipes={recipes} /> */}
         <p>This is a list of the current recipes.</p>
       </section>
     </>
