@@ -16,19 +16,19 @@ export default async function handler(request, response) {
           return response.status(404).json({ message: error.message });
         }
   
-      case "POST":
-        try {
-          const flake = request.body;
-          const flakeResponse = await Flake.create(flake);
-          if (!flakeResponse) {
-            throw new Error("Could not create new Flake.");
-          }
-          return response.status(200).json({
-            message: `The Flake ${flakeResponse.name} was successfully created with the id ${flakeResponse._id}`,
-          });
-        } catch (error) {
-          return response.status(404).json({ message: error.message });
-        }
+    //   case "POST":
+    //     try {
+    //       const flake = request.body;
+    //       const flakeResponse = await Flake.create(flake);
+    //       if (!flakeResponse) {
+    //         throw new Error("Could not create new Flake.");
+    //       }
+    //       return response.status(200).json({
+    //         message: `The Flake ${flakeResponse.name} was successfully created with the id ${flakeResponse._id}`,
+    //       });
+    //     } catch (error) {
+    //       return response.status(404).json({ message: error.message });
+    //     }
   
       default:
         return response
