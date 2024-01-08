@@ -1,5 +1,3 @@
-
-
 export default function Card({
   title,
   instructions,
