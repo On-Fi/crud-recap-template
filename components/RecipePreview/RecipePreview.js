@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import Card from "../Card/Card";
 
 export default function RecipePreview({ recipes }) {
     return (
